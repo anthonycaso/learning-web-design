@@ -6,6 +6,47 @@ body {
   font-size: 100%;
   margin: 0;
 
+img { max-width: 100%; }
+
+@media screen and (min-width: 481px) 
+{
+
+#products img { 
+  float: left;
+  margin: 0 6px 6px 0; 
+  }
+
+#products .more {
+  clear: left; }
+
+#products {
+  margin: 1em; }
+
+#testimonials { 
+  margin: 1em 5%;
+  border-radius: 16px; }
+}
+
+@media screen and (min-width: 780px) {
+#products {
+  float: left; 
+  margin: 0 2% 1em; 
+  clear: both; 
+  width: 55%; 
+  overflow: auto;
+}
+
+#testimonials {
+  margin: 1em 2% 1em 64%; }
+
+p#copyright {
+  clear: both; }
+
+#content { 
+  max-width: 1024px;
+  margin: 0 auto; }
+} 
+
 /* background gradient at top of page, from http://www.colorzilla.com/gradient-editor/ */
   background: -moz-linear-gradient(top,  #ffa853 0%, #fdf9bd 2%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa853),color-stop(2%,#fdf9bd));
